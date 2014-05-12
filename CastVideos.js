@@ -1206,7 +1206,14 @@ CastPlayer.prototype.addVideoThumbs = function() {
 var mediaJSON = {
   'categories': [{
     'name': 'Movies',
-    'videos': [{
+    'videos': [
+    { 
+      "description" : "Custom HLS stream",
+      "sources" : [ "/streams/stream.m3u8"],
+      "subtitle" : "Just a test trying to play an HLS stream",
+      "thumb" : "images/BigBuckBunny.jpg",
+      "title" : "Custom HSL stream"
+    },{
       'description': 'Big Buck Bunny tells the story of a giant rabbit with ' +
           'a heart bigger than himself. When one sunny day three rodents ' +
           'rudely harass him, something snaps... and the rabbit ain\'t no ' +
